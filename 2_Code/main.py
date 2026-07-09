@@ -1,32 +1,3 @@
-"""
-==========================================================
-RR Lyrae Automatic Analysis Pipeline
-Author : Orion Lee
-Version: 1.0
-
-Main Program
-
-流程：
-
-读取data目录全部fits
-        ↓
-数据预处理
-        ↓
-Lomb-Scargle周期分析
-        ↓
-FFT分析
-        ↓
-Phase Folding
-        ↓
-保存图片
-        ↓
-生成CSV
-        ↓
-生成TXT报告
-
-==========================================================
-"""
-
 import os
 import glob
 
@@ -49,14 +20,19 @@ from utils import (
 # ==========================================================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DATA_DIR = BASE_DIR
-OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+# 工程根目录(Project)
+PROJECT_DIR = os.path.dirname(BASE_DIR)
+
+# 数据目录
+DATA_DIR = os.path.join(PROJECT_DIR, "3_Data")
+
+
+# 输出目录
+OUTPUT_DIR = os.path.join(PROJECT_DIR, "output")
 
 MIN_PERIOD = 0.2
 MAX_PERIOD = 1.0
 
-# 若需要与文献比较，可填写文献周期
-# 不需要则设为 None
 LITERATURE_PERIOD = None
 
 # ==========================================================
