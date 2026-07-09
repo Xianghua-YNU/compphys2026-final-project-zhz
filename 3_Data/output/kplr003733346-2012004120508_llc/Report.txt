@@ -1,0 +1,16 @@
+============================================================
+RR Lyrae Automatic Analysis Report
+============================================================
+
+Target                   : kplr003733346-2012004120508_llc
+Observation Span (day)   : 97.09623470421502
+Data Points              : 4473
+LS Period                : 0.6818736106744955
+FFT Period               : 0.6839196897811708
+Difference               : 0.0020460791066753137
+Max Power                : 0.6812082671112523
+FAP                      : 0.0
+Period Error             : 0.003830851915942111
+
+============================================================
+Generated automatically by RR Lyrae Pipeline.
